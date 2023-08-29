@@ -30,7 +30,7 @@ class BlueNoki:
     
 class Toadette:
     charname = 'Toadette'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -63,7 +63,7 @@ class BlackShyGuy:
 
 class Toad:
     charname = 'Toad'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -85,7 +85,7 @@ class PurpleToad:
 
 class GreenDryBones:
     charname = 'Green Dry Bones'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -107,7 +107,7 @@ class RedDryBones:
 
 class Peach:
     charname = 'Peach'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = True
     stadium = False
     starToken = False
@@ -316,7 +316,7 @@ class YoshiPark:
 
 class PeachGarden:
     charname = 'Peach Garden'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = True
     starToken = False
@@ -338,7 +338,7 @@ class WarioPalace:
 
 class RedMagikoopa:
     charname = 'Red Magikoopa'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = False
     stadium = False
     starToken = False
@@ -393,7 +393,7 @@ class Luigi:
 
 class YellowPianta:
     charname = 'Yellow Pianta'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = False
     stadium = False
     starToken = False
@@ -437,7 +437,7 @@ class Toadsworth:
 
 class FireBro:
     charname = 'Fire Bro'
-    rarity = 'Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -459,7 +459,7 @@ class Wario:
 
 class Daisy:
     charname = 'Daisy'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = True
     stadium = False
     starToken = False
@@ -470,7 +470,7 @@ class Daisy:
 
 class RedNoki:
     charname = 'Red Noki'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = False
     stadium = False
     starToken = False
@@ -481,7 +481,7 @@ class RedNoki:
 
 class RedKoopaTroopa:
     charname = 'Red Koopa Troopa'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = False
     stadium = False
     starToken = False
@@ -503,7 +503,7 @@ class DKJungle:
 
 class BowserCastle:
     charname = 'Bowser Castle'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = False
     stadium = True
     starToken = False
@@ -514,7 +514,7 @@ class BowserCastle:
 
 class HammerBro:
     charname = 'Hammer Bro'
-    rarity = 'Super Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -536,7 +536,7 @@ class BoomerangBro:
 
 class DiddyKong:
     charname = 'Diddy Kong'
-    rarity = 'Super Rare'
+    rarity = 'Rare'
     captain = True
     stadium = False
     starToken = False
@@ -591,7 +591,7 @@ class Magikoopa:
 
 class RedPianta:
     charname = 'Red Pianta'
-    rarity = 'Super Rare'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -624,7 +624,7 @@ class Yoshi:
 
 class Boo:
     charname = 'Boo'
-    rarity = 'Ultra Rare'
+    rarity = 'Super Rare'
     captain = False
     stadium = False
     starToken = False
@@ -657,7 +657,7 @@ class DonkeyKong:
 
 class Birdo:
     charname = 'Birdo'
-    rarity = 'Ultra Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -689,8 +689,8 @@ class Bowser:
         self._count = next(self._count)
 
 #dictonaries that store cards by rarity
-common_dict = {1:BluePianta, 2:BlueNoki, 3:Toadette, 4:ShyGuy, 5:BlackShyGuy, 6:Toad, 7:PurpleToad, 8:GreenDryBones, 9:RedDryBones, 10:Peach, 11:BowserJr, 12:BabyMario, 13:BabyLuigi, 14:Goomba, 15:Paragoomba, 16:Paratroopa, 17:GreenShyGuy, 18:MontyMole, 19:BlueToad, 20:YellowToad, 21:GreenToad, 22:KoopaTroopa, 23:BlueShyGuy, 24:YellowShyGuy, 25:DryBones, 26:BlueDryBones, 27:MarioStadium, 28:YoshiPark, 29:PeachGarden, 30:WarioPalace}
-rare_dict = {1:RedMagikoopa, 2:GreenMagikoopa, 3:YellowMagikoopa, 4:Mario, 5:Luigi, 6:YellowPianta, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:FireBro, 11:Wario, 12:Daisy, 13:RedNoki, 14:RedKoopaTroopa, 15:DKJungle, 16:BowserCastle}
-superrare_dict = {1:HammerBro, 2:BoomerangBro, 3:DiddyKong, 4:DixieKong, 5:Waluigi, 6:KingBoo, 7:Magikoopa, 8:RedPianta, 9:StarTokenCR}
-ultrarare_dict = {1:Yoshi, 2:Boo, 3:PeteyPiranha, 4:DonkeyKong, 5:Birdo, 6:StarTokenSUSE}
+common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Peach, 11:BowserJr, 12:BabyMario, 13:BabyLuigi, 14:Goomba, 15:Paragoomba, 16:Paratroopa, 17:GreenShyGuy, 18:MontyMole, 19:BlueToad, 20:YellowToad, 21:GreenToad, 22:KoopaTroopa, 23:BlueShyGuy, 24:YellowShyGuy, 25:DryBones, 26:BlueDryBones, 27:MarioStadium, 28:YoshiPark, 29:BowserCastle, 30:WarioPalace}
+rare_dict = {1:DiddyKong, 2:GreenMagikoopa, 3:YellowMagikoopa, 4:Mario, 5:Luigi, 6:Toad, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta, 11:Wario, 12:Daisy, 13:Toadette, 14:GreenDryBones, 15:DKJungle, 16:PeachGarden}
+superrare_dict = {1:Birdo, 2:BoomerangBro, 3:RedMagikoopa, 4:DixieKong, 5:Waluigi, 6:KingBoo, 7:Magikoopa, 8:Boo, 9:StarTokenCR}
+ultrarare_dict = {1:Yoshi, 2:FireBro, 3:PeteyPiranha, 4:DonkeyKong, 5:HammerBro, 6:StarTokenSUSE}
 secretrare_dict = {1:Bowser}
