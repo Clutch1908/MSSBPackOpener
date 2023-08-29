@@ -102,7 +102,7 @@ def getSummary():
     GoombaCount = MSSBCardDatabase.Goomba()._count - 1
     GoombaCountStr = str (GoombaCount)
     GoombaOutput = MSSBCardDatabase.Goomba().charname + " -- " + MSSBCardDatabase.Goomba().rarity + " -- " + GoombaCountStr
-    if GoomabCount > 0:
+    if GoombaCount > 0:
         outputList.append(GoombaOutput)
 
     KoopaTroopaCount = MSSBCardDatabase.KoopaTroopa()._count - 1
