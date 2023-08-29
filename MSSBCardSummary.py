@@ -133,7 +133,7 @@ def getSummary():
     DixieKongCount = MSSBCardDatabase.DixieKong()._count - 1
     DixieKongCountStr = str (DixieKongCount)
     DixieKongOutput = MSSBCardDatabase.DixieKong().charname + " -- " + MSSBCardDatabase.DixieKong().rarity + " -- " + DixieKongCountStr
-    if DixieKonggCount > 0:
+    if DixieKongCount > 0:
         outputList.append(DixieKongOutput)
 
     BooCount = MSSBCardDatabase.Boo()._count - 1
