@@ -10,6 +10,7 @@ if 'stage' not in st.session_state:
 def set_state(i):
     st.session_state.stage = i
     if st.session_state.stage == 0:
+        MSSB.getSummary()
         reload(MSSB)
     if st.session_state.stage == 1:
         MSSB.openPack()
