@@ -9,9 +9,6 @@ if 'stage' not in st.session_state:
 
 def set_state(i):
     st.session_state.stage = i
-    if st.session_state.stage == 0:
-        MSSB.getSummary()
-        reload(MSSB)
     if st.session_state.stage == 1:
         MSSB.openPack()
         MSSB.returnPackString()
@@ -23,6 +20,8 @@ def set_state(i):
         MSSB.returnPackString()
     
 if st.session_state.stage == 0:
+    MSSB.getSummary()
+    reload(MSSB)
     with st.sidebar:
             st.header('Pack Opener Options')
             st.button('Open Your First Pack!', on_click=set_state, args = [1])
