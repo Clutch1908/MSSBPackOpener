@@ -689,8 +689,8 @@ class Bowser:
         self._count = next(self._count)
 
 #dictonaries that store cards by rarity
-common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Peach, 11:BowserJr, 12:BabyMario, 13:BabyLuigi, 14:Goomba, 15:Paragoomba, 16:Paratroopa, 17:GreenShyGuy, 18:MontyMole, 19:BlueToad, 20:YellowToad, 21:GreenToad, 22:KoopaTroopa, 23:BlueShyGuy, 24:YellowShyGuy, 25:DryBones, 26:BlueDryBones, 27:MarioStadium, 28:YoshiPark, 29:BowserCastle, 30:WarioPalace}
-rare_dict = {1:DiddyKong, 2:GreenMagikoopa, 3:YellowMagikoopa, 4:Mario, 5:Luigi, 6:Toad, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta, 11:Wario, 12:Daisy, 13:Toadette, 14:GreenDryBones, 15:DKJungle, 16:PeachGarden}
+common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Daisy, 11:BowserJr, 12:BabyMario, 13:BabyLuigi, 14:Goomba, 15:Paragoomba, 16:Paratroopa, 17:GreenShyGuy, 18:MontyMole, 19:BlueToad, 20:YellowToad, 21:GreenToad, 22:KoopaTroopa, 23:BlueShyGuy, 24:YellowShyGuy, 25:DryBones, 26:BlueDryBones, 27:MarioStadium, 28:YoshiPark, 29:BowserCastle, 30:WarioPalace}
+rare_dict = {1:DiddyKong, 2:GreenMagikoopa, 3:YellowMagikoopa, 4:Mario, 5:Luigi, 6:Toad, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta, 11:Wario, 12:Peach, 13:Toadette, 14:GreenDryBones, 15:DKJungle, 16:PeachGarden}
 superrare_dict = {1:Birdo, 2:BoomerangBro, 3:RedMagikoopa, 4:DixieKong, 5:Waluigi, 6:KingBoo, 7:Magikoopa, 8:Boo, 9:StarTokenCR}
 ultrarare_dict = {1:Yoshi, 2:FireBro, 3:PeteyPiranha, 4:DonkeyKong, 5:HammerBro, 6:StarTokenSUSE}
 secretrare_dict = {1:Bowser}
