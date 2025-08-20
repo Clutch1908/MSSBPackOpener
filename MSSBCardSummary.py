@@ -67,7 +67,6 @@ def getSummary():
     if PurpleToadCount > 0:
         outputList.append(PurpleToadOutput)
 
-
     ShyGuyCount = MSSBCardDatabase.ShyGuy()._count - 1
     ShyGuyCountStr = str (ShyGuyCount)
     ShyGuyOutput = MSSBCardDatabase.ShyGuy().charname + " -- " + MSSBCardDatabase.ShyGuy().rarity + " -- " + ShyGuyCountStr
@@ -86,7 +85,6 @@ def getSummary():
     if YellowShyGuyCount > 0:
         outputList.append(YellowShyGuyOutput)
     
-
     GreenShyGuyCount = MSSBCardDatabase.GreenShyGuy()._count - 1
     GreenShyGuyCountStr = str (GreenShyGuyCount)
     GreenShyGuyOutput = MSSBCardDatabase.GreenShyGuy().charname + " -- " + MSSBCardDatabase.GreenShyGuy().rarity + " -- " + GreenShyGuyCountStr
@@ -128,7 +126,6 @@ def getSummary():
     WaluigiOutput = MSSBCardDatabase.Waluigi().charname + " -- " + MSSBCardDatabase.Waluigi().rarity + " -- " + WaluigiCountStr
     if WaluigiCount > 0:
         outputList.append(WaluigiOutput)
-
 
     DixieKongCount = MSSBCardDatabase.DixieKong()._count - 1
     DixieKongCountStr = str (DixieKongCount)
@@ -379,20 +376,56 @@ def getSummary():
     if BowserCastleCount > 0:
         outputListStad.append(BowserCastleOutput)
 
+    CornFieldCount = MSSBCardDatabase.CornField()._count - 1
+    CornFieldCountStr = str (CornFieldCount)
+    CornFieldOutput = MSSBCardDatabase.CornField().charname + " -- " + MSSBCardDatabase.CornField().rarity + " -- " + CornFieldCountStr
+    if CornFieldCount > 0:
+        outputListStad.append(CornFieldOutput)
+
+    ToyFieldCount = MSSBCardDatabase.ToyField()._count - 1
+    ToyFieldCountStr = str (ToyFieldCount)
+    ToyFieldOutput = MSSBCardDatabase.ToyField().charname + " -- " + MSSBCardDatabase.ToyField().rarity + " -- " + ToyFieldCountStr
+    if ToyFieldCount > 0:
+        outputListStad.append(ToyFieldOutput)
+
     #start star token list with section header
     outputListTokens.append("Star Tokens:")
 
-    StarTokenCRCount = MSSBCardDatabase.StarTokenCR()._count - 1
-    StarTokenCRCountStr = str (StarTokenCRCount)
-    StarTokenCROutput = MSSBCardDatabase.StarTokenCR().charname + " -- " + MSSBCardDatabase.StarTokenCR().rarity + " -- " + StarTokenCRCountStr
-    if StarTokenCRCount > 0:
-        outputListTokens.append(StarTokenCROutput)
+    MissedChanceCount = MSSBCardDatabase.MissedChance()._count - 1
+    MissedChanceCountStr = str (MissedChanceCount)
+    MissedChanceOutput = MSSBCardDatabase.MissedChance().charname + " -- " + MSSBCardDatabase.MissedChance().rarity + " -- " + MissedChanceCountStr
+    if MissedChanceCount > 0:
+        outputListTokens.append(MissedChanceOutput)
 
-    StarTokenSUSECount = MSSBCardDatabase.StarTokenSUSE()._count - 1
-    StarTokenSUSECountStr = str (StarTokenSUSECount)
-    StarTokenSUSEOutput = MSSBCardDatabase.StarTokenSUSE().charname + " -- " + MSSBCardDatabase.StarTokenSUSE().rarity + " -- " + StarTokenSUSECountStr
-    if StarTokenSUSECount > 0:
-        outputListTokens.append(StarTokenSUSEOutput)
+    CommonStarCount = MSSBCardDatabase.CommonStar()._count - 1
+    CommonStarCountCountStr = str (CommonStarCount)
+    CommonStarOutput = MSSBCardDatabase.CommonStar().charname + " -- " + MSSBCardDatabase.CommonStar().rarity + " -- " + CommonStarCountStr
+    if CommonStarCount > 0:
+        outputListTokens.append(CommonStarOutput)
+
+    RareStarCount = MSSBCardDatabase.RareStar()._count - 1
+    RareStarCountCountStr = str (RareStarCount)
+    RareStarOutput = MSSBCardDatabase.RareStar().charname + " -- " + MSSBCardDatabase.RareStar().rarity + " -- " + RareStarCountStr
+    if RareStarCount > 0:
+        outputListTokens.append(RareStarOutput)
+
+    SuperStarCount = MSSBCardDatabase.SuperStar()._count - 1
+    SuperStarCountCountStr = str (SuperStarCount)
+    SuperStarOutput = MSSBCardDatabase.SuperStar().charname + " -- " + MSSBCardDatabase.SuperStar().rarity + " -- " + SuperStarCountStr
+    if SuperStarCount > 0:
+        outputListTokens.append(SuperStarOutput)
+
+    UltraStarCount = MSSBCardDatabase.UltraStar()._count - 1
+    UltraStarCountCountStr = str (UltraStarCount)
+    UltraStarOutput = MSSBCardDatabase.UltraStar().charname + " -- " + MSSBCardDatabase.UltraStar().rarity + " -- " + UltraStarCountStr
+    if UltraStarCount > 0:
+        outputListTokens.append(UltraStarOutput)
+
+    SecretStarCount = MSSBCardDatabase.SecretStar()._count - 1
+    SecretStarCountCountStr = str (SecretStarCount)
+    SecretStarOutput = MSSBCardDatabase.SecretStar().charname + " -- " + MSSBCardDatabase.SecretStar().rarity + " -- " + SecretStarCountStr
+    if SecretStarCount > 0:
+        outputListTokens.append(SecretStarOutput)
 
     #join the lists together to create the final summary output variable
     outputCharJoined = "\n\n".join(outputList)
@@ -400,7 +433,3 @@ def getSummary():
     outputTokensJoined = "\n\n".join(outputListTokens)
     outputJoined = outputCharJoined + "\n" + "\n" + outputStadJoined + "\n" + "\n" + outputTokensJoined
     return outputCharJoined, outputStadJoined, outputTokensJoined, outputJoined
-
-
-
-
