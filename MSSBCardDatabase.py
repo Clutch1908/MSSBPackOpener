@@ -3,7 +3,8 @@ from itertools import count
 #import path to format image locations
 from pathlib import Path
 
-#Each class contains static information about each card, need to design in class feature to count the amoutn of times the class has been called in the code
+#Each class contains static information about each card, need to design in class feature to count the amount of times the class has been called in the code
+#Character Classes
 class BluePianta:
     charname = 'Blue Pianta'
     rarity = 'Common'
@@ -600,6 +601,29 @@ class Bowser:
     def __init__(self):
         self._count = next(self._count)
 
+#Character Wild Card Classes
+class WildSR:
+    charname = 'Wild Super Rare'
+    rarity = 'Ultra Rare'
+    captain = False
+    stadium = False
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class WildUR:
+    charname = 'Wild Ultra Rare'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
 #Stadium Classes        
 class BowserCastle:
     charname = 'Bowser Castle'
@@ -783,13 +807,9 @@ class MissedChance:
 #dictonaries that store cards by rarity and store variants for special circumstances
 common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Goomba, 11:Paragoomba, 12:Paratroopa, 13:GreenShyGuy, 14:MontyMole, 15:BlueToad, 16:YellowToad, 17:GreenToad, 18:KoopaTroopa, 19:BlueShyGuy, 20:YellowShyGuy, 21:DryBones, 22:BlueDryBones, 23:Toad}
 rare_dict = {1:Toadette, 2:GreenDryBones, 3:Daisy, 4:BowserJr, 5:BabyMario, 6:BabyLuigi, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta}
-superrare_dict = {1:Birdo, 2:Wario, 3:Mario, 4:Luigi, 5:Waluigi, 6:KingBoo}
-ultrarare_dict = {1:Yoshi, 2:DonkeyKong, 3:PeteyPiranha}
-secretrare_dict = {1:Bowser}
-captainpitcher_dict = {1:Peach, 2:DiddyKong}
-noncaptainpitcher_dict = {1:Boo, 2:DixieKong}
-bro_dict = {1:FireBro, 2:HammerBro, 3:BoomerangBro}
-magikoopa_dict = {1:Magikoopa, 2:RedMagikoopa, 3:GreenMagikoopa, 4:YellowMagikoopa}
+superrare_dict = {1:Peach, 2:DiddyKong, 3:Boo, 4:DixieKong, 5:Luigi, 6:Wario, 7:Waluigi, 8:KingBoo, 9:Mario, 10:Birdo}
+ultrarare_dict = {1:WildSR, 2:Yoshi, 3:DonkeyKong, 4:PeteyPiranha, 5:HammerBro, 6:BoomerangBro, 7:FireBro, 8:Magikoopa, 9:RedMagikoopa, 10:GreenMagikoopa, 11:YellowMagikoopa}
+secretrare_dict = {1:WildUR, 2:Bowser}
 stadium_dict = {1:YoshiPark, 2:BowserCastle, 3:WarioPalace, 4:MarioStadium, 5:DKJungle, 6:PeachGarden, 7:ToyField}
 starchance_dict = {1:CommonStar, 2:RareStar, 3:SuperStar, 4:UltraStar, 5:SecretStar}
 consumables_dict = {1: ExtraPack, 2:Reroll, 3:Trade}

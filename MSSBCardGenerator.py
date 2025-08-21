@@ -71,6 +71,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 2501 and stadiumCard <= 5000:
             selectedCard = MSSBCardDatabase.stadium_dict[2]
             def count():
@@ -79,6 +80,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 5001 and stadiumCard <= 7500:
             selectedCard = MSSBCardDatabase.stadium_dict[3]
             def count():
@@ -87,6 +89,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 7501 and stadiumCard <= 7650:
             selectedCard = MSSBCardDatabase.stadium_dict[4]
             def count():
@@ -95,6 +98,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 7501 and stadiumCard <= 7650:
             selectedCard = MSSBCardDatabase.stadium_dict[4]
             def count():
@@ -103,6 +107,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 7651 and stadiumCard <= 8500:
             selectedCard = MSSBCardDatabase.stadium_dict[5]
             def count():
@@ -111,6 +116,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif stadiumCard >= 8501 and stadiumCard <= 9000:
             selectedCard = MSSBCardDatabase.stadium_dict[6]
             def count():
@@ -118,7 +124,8 @@ def openPack():
             countStr = str(count())
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)  
+            print(selectedCardOutput_4) 
+            selectedCardImage_4 = selectedCard.image 
         elif stadiumCard >= 9001:
             selectedCard = MSSBCardDatabase.stadium_dict[7]
             def count():
@@ -126,7 +133,8 @@ def openPack():
             countStr = str(count())
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)   
+            print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image   
         else:
             print ("Error in code") 
     elif itemCard >= 4001 and itemCard <= 4500:
@@ -138,7 +146,8 @@ def openPack():
             countStr = str(count())
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4) 
+            print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image 
         elif starCard <= 4001 and starCard >= 7000:
             selectedCard = MSSBCardDatabase.starchance_dict[2]
             def count():
@@ -147,6 +156,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image
         elif starCard <= 7001 and starCard >= 8500:
             selectedCard = MSSBCardDatabase.starchance_dict[3]
             def count():
@@ -155,6 +165,7 @@ def openPack():
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
             print(selectedCardOutput_4) 
+            selectedCardImage_4 = selectedCard.image
         elif starCard <= 8501 and starCard >= 9500:
             selectedCard = MSSBCardDatabase.starchance_dict[4]
             def count():
@@ -162,7 +173,8 @@ def openPack():
             countStr = str(count())
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4) 
+            print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image 
         elif starCard <= 9501:
             selectedCard = MSSBCardDatabase.starchance_dict[5]
             def count():
@@ -170,7 +182,8 @@ def openPack():
             countStr = str(count())
             countStrNum = re.findall(r'\d+', countStr)
             selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4) 
+            print(selectedCardOutput_4)
+            selectedCardImage_4 = selectedCard.image 
         else:
             print ("Error in code")
     elif itemCard >= 4501 and itemCard <= 4600:
@@ -181,6 +194,7 @@ def openPack():
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
         print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image
     elif itemCard >= 4601 and itemCard <= 4700:
         selectedCard = MSSBCardDatabase.consumables_dict[2]
         def count():
@@ -189,6 +203,7 @@ def openPack():
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
         print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image
     elif itemCard >= 4800 and itemCard <= 4800:
         selectedCard = MSSBCardDatabase.consumables_dict[3]
         def count():
@@ -197,6 +212,7 @@ def openPack():
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
         print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image
     elif itemCard >= 4801:
         selectedCard = MSSBCardDatabase.misc_dict[1]
         def count():
@@ -204,15 +220,16 @@ def openPack():
         countStr = str(count())
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-        print(selectedCardOutput_4)    
+        print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image    
     else:
         print("Error in code")
-        
+
     #set up the call to decide which rarity to use for the rare+ card pull
     cardRarity = _sysrand.randint (1, 10000)
     global selectedCardOutput_5
     global selectedCardImage_5
-    if cardRarity <= 8600:
+    if cardRarity <= 8400:
         cardFive = _sysrand.randint(1,10)
         selectedCard = MSSBCardDatabase.rare_dict[cardFive]
         def count():
@@ -222,8 +239,30 @@ def openPack():
         selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
         print(selectedCardOutput_5)
         selectedCardImage_5 = selectedCard.image
-    elif cardRarity >= 8601 and cardRarity <= 9400:
-        cardFive = _sysrand.randint(1,6)
+    elif cardRarity >= 8401 and cardRarity <= 9400:
+        cardFiveWeight = _sysrand.randint(1,10000)
+        if cardFiveWeight <= 1227:
+            cardFive = 1
+        elif cardFiveWeight >= 1228 and cardFiveWeight <= 2454:
+            cardFive = 2
+        elif cardFiveWeight >= 2455 and cardFiveWeight <= 3680:
+            cardFive = 3
+        elif cardFiveWeight >= 3981 and cardFiveWeight <= 4906:
+            cardFive = 4
+        elif cardFiveWeight >= 4907 and cardFiveWeight <= 5906:
+            cardFive = 5
+        elif cardFiveWeight >= 5907 and cardFiveWeight <= 6906:
+            cardFive = 6
+        elif cardFiveWeight >= 6907 and cardFiveWeight <= 7739:
+            cardFive = 7
+        elif cardFiveWeight >= 7740 and cardFiveWeight <= 8572:
+            cardFive = 8
+        elif cardFiveWeight >= 8573 and cardFiveWeight <= 9286:
+            cardFive = 9
+        elif cardFiveWeight >= 9287:
+            cardFive = 10
+        else:
+            print("Error in code")
         selectedCard = MSSBCardDatabase.superrare_dict[cardFive]
         def count():
             return MSSBCardDatabase.superrare_dict[cardFive]()._count
@@ -233,7 +272,31 @@ def openPack():
         print(selectedCardOutput_5)
         selectedCardImage_5 = selectedCard.image
     elif cardRarity >= 9401 and cardRarity <= 9800:
-        cardFive = _sysrand.randint(1,3)
+        cardFiveWeight = _sysrand.randint(1,10000)
+        if cardFiveWeight <= 1666:
+            cardFive = 1
+        elif cardFiveWeight >= 1667 and cardFiveWeight <= 3333:
+            cardFive = 2
+        elif cardFiveWeight >= 3334 and cardFiveWeight <= 5000:
+            cardFive = 3
+        elif cardFiveWeight >= 5001 and cardFiveWeight <= 6667:
+            cardFive = 4
+        elif cardFiveWeight >= 6668 and cardFiveWeight <= 7222:
+            cardFive = 5
+        elif cardFiveWeight >= 7223 and cardFiveWeight <= 7777:
+            cardFive = 6
+        elif cardFiveWeight >= 7778 and cardFiveWeight <= 8332:
+            cardFive = 7
+        elif cardFiveWeight >= 8333 and cardFiveWeight <= 8749:
+            cardFive = 8
+        elif cardFiveWeight >= 8750 and cardFiveWeight <= 9166:
+            cardFive = 9
+        elif cardFiveWeight >= 9167 and cardFiveWeight <= 9583:
+            cardFive = 10
+        elif cardFiveWeight >= 9584:
+            cardFive = 11
+        else:
+            print("Error in code")
         selectedCard = MSSBCardDatabase.ultrarare_dict[cardFive]
         def count():
             return MSSBCardDatabase.ultrarare_dict[cardFive]()._count
@@ -243,7 +306,13 @@ def openPack():
         print(selectedCardOutput_5)
         selectedCardImage_5 = selectedCard.image
     elif cardRarity >=9801:
-        cardFive = _sysrand.randint (1,1)
+        cardFiveWeight = _sysrand.randint (1,10000)
+        if cardFiveWeight <= 7500:
+            cardFive = 1
+        elif cardFiveWeight >= 7501:
+            cardFive = 2
+        else:
+            print("Error in code")
         selectedCard = MSSBCardDatabase.secretrare_dict[cardFive]
         def count():
             return MSSBCardDatabase.secretrare_dict[cardFive]()._count

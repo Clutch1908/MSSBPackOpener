@@ -337,6 +337,18 @@ def getSummary():
     if FireBroCount > 0:
         outputList.append(FireBroOutput)
 
+    WildSRCount = MSSBCardDatabase.WildSR()._count - 1
+    WildSRCountStr = str (WildSRCount)
+    WildSROutput = MSSBCardDatabase.WildSR().charname + " -- " + MSSBCardDatabase.WildSR().rarity + " -- " + WildSRCountStr
+    if WildSRCount > 0:
+        outputList.append(WildSROutput)
+
+    WildURCount = MSSBCardDatabase.WildUR()._count - 1
+    WildURCountStr = str (WildURCount)
+    WildUROutput = MSSBCardDatabase.WildUR().charname + " -- " + MSSBCardDatabase.WildUR().rarity + " -- " + WildURCountStr
+    if WildURCount > 0:
+        outputList.append(WildUROutput)
+
     #start stadium list with section header
     outputListStad.append("Stadiums:")
 
