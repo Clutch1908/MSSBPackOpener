@@ -81,7 +81,7 @@ def openPack():
             print("Error in code")
         selectedCard = MSSBCardDatabase.stadium_dict[cardFour]
         def count():
-            return MSSBCardDatabase.stadium_dict[selectedCard]()._count
+            return MSSBCardDatabase.stadium_dict[cardFour]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
@@ -103,7 +103,7 @@ def openPack():
             print("Error in code")
         selectedCard = MSSBCardDatabase.starchance_dict[cardFour]
         def count():
-            return MSSBCardDatabase.starchance_dict[selectedCard]()._count
+            return MSSBCardDatabase.starchance_dict[cardFour]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+', countStr)
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
@@ -170,7 +170,7 @@ def openPack():
             cardFive = 2
         elif cardFiveWeight >= 2455 and cardFiveWeight <= 3680:
             cardFive = 3
-        elif cardFiveWeight >= 3981 and cardFiveWeight <= 4906:
+        elif cardFiveWeight >= 3681 and cardFiveWeight <= 4906:
             cardFive = 4
         elif cardFiveWeight >= 4907 and cardFiveWeight <= 5906:
             cardFive = 5
