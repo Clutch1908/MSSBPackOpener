@@ -16,7 +16,7 @@ packsOpened = 0
 
 def openPack():
     #set up the seven common card pulls
-    cardOne = _sysrand.randint(1,30)
+    cardOne = _sysrand.randint(1,23)
     selectedCard = MSSBCardDatabase.common_dict[cardOne]
     #create call to find number of times a card has been pulled
     def count():
@@ -33,7 +33,7 @@ def openPack():
     global selectedCardImage_1
     selectedCardImage_1 = selectedCard.image
 
-    cardTwo = _sysrand.randint(1,30)
+    cardTwo = _sysrand.randint(1,23)
     selectedCard = MSSBCardDatabase.common_dict[cardTwo]
     def count():
         return MSSBCardDatabase.common_dict[cardTwo]()._count
@@ -45,7 +45,7 @@ def openPack():
     global selectedCardImage_2
     selectedCardImage_2 = selectedCard.image
 
-    cardThree = _sysrand.randint(1,30)
+    cardThree = _sysrand.randint(1,23)
     selectedCard = MSSBCardDatabase.common_dict[cardThree]
     def count():
         return MSSBCardDatabase.common_dict[cardThree]()._count
@@ -57,116 +57,205 @@ def openPack():
     global selectedCardImage_3
     selectedCardImage_3 = selectedCard.image
 
-    cardFour = _sysrand.randint(1,30)
-    selectedCard = MSSBCardDatabase.common_dict[cardFour]
-    def count():
-        return MSSBCardDatabase.common_dict[cardFour]()._count
-    countStr = str(count())
-    countStrNum = re.findall(r'\d+',countStr)
+    #set up the call to decide which item will be obtained for the fourth card
+    itemCard = _sysrand.randint (1, 10000)
     global selectedCardOutput_4
-    selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-    print(selectedCardOutput_4)
     global selectedCardImage_4
-    selectedCardImage_4 = selectedCard.image
-
-    cardFive = _sysrand.randint(1,30)
-    selectedCard = MSSBCardDatabase.common_dict[cardFive]
-    def count():
-        return MSSBCardDatabase.common_dict[cardFive]()._count
-    countStr = str(count())
-    countStrNum = re.findall(r'\d+',countStr)
-    global selectedCardOutput_5
-    selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-    print(selectedCardOutput_5)
-    global selectedCardImage_5
-    selectedCardImage_5 = selectedCard.image
-
-    cardSix = _sysrand.randint(1,30)
-    selectedCard = MSSBCardDatabase.common_dict[cardSix]
-    def count():
-        return MSSBCardDatabase.common_dict[cardSix]()._count
-    countStr = str(count())
-    countStrNum = re.findall(r'\d+',countStr)
-    global selectedCardOutput_6
-    selectedCardOutput_6 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-    print(selectedCardOutput_6)
-    global selectedCardImage_6
-    selectedCardImage_6 = selectedCard.image
-
-    cardSeven = _sysrand.randint(1,30)
-    selectedCard = MSSBCardDatabase.common_dict[cardSeven]
-    def count():
-        return MSSBCardDatabase.common_dict[cardSeven]()._count
-    countStr = str(count())
-    countStrNum = re.findall(r'\d+',countStr)
-    global selectedCardOutput_7
-    selectedCardOutput_7 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-    print(selectedCardOutput_7)
-    global selectedCardImage_7
-    selectedCardImage_7 = selectedCard.image
-
-    #set up the one rare card pull
-    cardEight = _sysrand.randint(1,16)
-    selectedCard = MSSBCardDatabase.rare_dict[cardEight]
-    def count():
-        return MSSBCardDatabase.rare_dict[cardEight]()._count
-    countStr = str(count())
-    countStrNum = re.findall(r'\d+',countStr)
-    global selectedCardOutput_8
-    selectedCardOutput_8 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-    print(selectedCardOutput_8)
-    global selectedCardImage_8
-    selectedCardImage_8 = selectedCard.image
-
+    if itemCard <= 4000:
+        stadiumCard = _sysrand.randint (1, 10000)
+        if stadiumCard <= 2500:
+            selectedCard = MSSBCardDatabase.stadium_dict[1]
+            def count():
+                return MSSBCardDatabase.stadium_dict[1]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 2501 and stadiumCard <= 5000:
+            selectedCard = MSSBCardDatabase.stadium_dict[2]
+            def count():
+                return MSSBCardDatabase.stadium_dict[2]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 5001 and stadiumCard <= 7500:
+            selectedCard = MSSBCardDatabase.stadium_dict[3]
+            def count():
+                return MSSBCardDatabase.stadium_dict[3]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 7501 and stadiumCard <= 7650:
+            selectedCard = MSSBCardDatabase.stadium_dict[4]
+            def count():
+                return MSSBCardDatabase.stadium_dict[4]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 7501 and stadiumCard <= 7650:
+            selectedCard = MSSBCardDatabase.stadium_dict[4]
+            def count():
+                return MSSBCardDatabase.stadium_dict[4]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 7651 and stadiumCard <= 8500:
+            selectedCard = MSSBCardDatabase.stadium_dict[5]
+            def count():
+                return MSSBCardDatabase.stadium_dict[5]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif stadiumCard >= 8501 and stadiumCard <= 9000:
+            selectedCard = MSSBCardDatabase.stadium_dict[6]
+            def count():
+                return MSSBCardDatabase.stadium_dict[6]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)  
+        elif stadiumCard >= 9001:
+            selectedCard = MSSBCardDatabase.stadium_dict[7]
+            def count():
+                return MSSBCardDatabase.stadium_dict[7]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)   
+        else:
+            print ("Error in code") 
+    elif itemCard >= 4001 and itemCard <= 4500:
+        starCard = _sysrand.randint (1, 10000)
+        if starCard <= 4000:
+            selectedCard = MSSBCardDatabase.starchance_dict[1]
+            def count():
+                return MSSBCardDatabase.starchance_dict[1]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4) 
+        elif starCard <= 4001 and starCard >= 7000:
+            selectedCard = MSSBCardDatabase.starchance_dict[2]
+            def count():
+                return MSSBCardDatabase.starchance_dict[2]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4)
+        elif starCard <= 7001 and starCard >= 8500:
+            selectedCard = MSSBCardDatabase.starchance_dict[3]
+            def count():
+                return MSSBCardDatabase.starchance_dict[3]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4) 
+        elif starCard <= 8501 and starCard >= 9500:
+            selectedCard = MSSBCardDatabase.starchance_dict[4]
+            def count():
+                return MSSBCardDatabase.starchance_dict[4]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4) 
+        elif starCard <= 9501:
+            selectedCard = MSSBCardDatabase.starchance_dict[5]
+            def count():
+                return MSSBCardDatabase.starchance_dict[5]()._count
+            countStr = str(count())
+            countStrNum = re.findall(r'\d+', countStr)
+            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+            print(selectedCardOutput_4) 
+        else:
+            print ("Error in code")
+    elif itemCard >= 4501 and itemCard <= 4600:
+        selectedCard = MSSBCardDatabase.consumables_dict[1]
+        def count():
+            return MSSBCardDatabase.consumables_dict[1]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)
+    elif itemCard >= 4601 and itemCard <= 4700:
+        selectedCard = MSSBCardDatabase.consumables_dict[2]
+        def count():
+            return MSSBCardDatabase.consumables_dict[2]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)
+    elif itemCard >= 4800 and itemCard <= 4800:
+        selectedCard = MSSBCardDatabase.consumables_dict[3]
+        def count():
+            return MSSBCardDatabase.consumables_dict[3]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)
+    elif itemCard >= 4801:
+        selectedCard = MSSBCardDatabase.misc_dict[1]
+        def count():
+            return MSSBCardDatabase.misc_dict[1]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)    
+    else:
+        print("Error in code")
+        
     #set up the call to decide which rarity to use for the rare+ card pull
-    cardNineRarity = _sysrand.randint (1, 10000)
-    global selectedCardOutput_9
-    global selectedCardImage_9
-    if cardNineRarity <= 7085:
-        cardNine = _sysrand.randint(1,16)
-        selectedCard = MSSBCardDatabase.rare_dict[cardNine]
+    cardRarity = _sysrand.randint (1, 10000)
+    global selectedCardOutput_5
+    global selectedCardImage_5
+    if cardRarity <= 8600:
+        cardFive = _sysrand.randint(1,10)
+        selectedCard = MSSBCardDatabase.rare_dict[cardFive]
         def count():
-            return MSSBCardDatabase.rare_dict[cardNine]()._count
+            return MSSBCardDatabase.rare_dict[cardFive]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+',countStr)
-        selectedCardOutput_9 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-        print(selectedCardOutput_9)
-        selectedCardImage_9 = selectedCard.image
-    elif cardNineRarity >= 7086 and cardNineRarity <= 8751:
-        cardNine = _sysrand.randint(1,9)
-        selectedCard = MSSBCardDatabase.superrare_dict[cardNine]
+        selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_5)
+        selectedCardImage_5 = selectedCard.image
+    elif cardRarity >= 8601 and cardRarity <= 9400:
+        cardFive = _sysrand.randint(1,6)
+        selectedCard = MSSBCardDatabase.superrare_dict[cardFive]
         def count():
-            return MSSBCardDatabase.superrare_dict[cardNine]()._count
+            return MSSBCardDatabase.superrare_dict[cardFive]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+',countStr)
-        selectedCardOutput_9 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-        print(selectedCardOutput_9)
-        selectedCardImage_9 = selectedCard.image
-    elif cardNineRarity >= 8750 and cardNineRarity <= 9584:
-        cardNine = _sysrand.randint(1,6)
-        selectedCard = MSSBCardDatabase.ultrarare_dict[cardNine]
+        selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_5)
+        selectedCardImage_5 = selectedCard.image
+    elif cardRarity >= 9401 and cardRarity <= 9800:
+        cardFive = _sysrand.randint(1,3)
+        selectedCard = MSSBCardDatabase.ultrarare_dict[cardFive]
         def count():
-            return MSSBCardDatabase.ultrarare_dict[cardNine]()._count
+            return MSSBCardDatabase.ultrarare_dict[cardFive]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+',countStr)
-        selectedCardOutput_9 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-        print(selectedCardOutput_9)
-        selectedCardImage_9 = selectedCard.image
-    elif cardNineRarity >=9585:
-        cardNine = _sysrand.randint (1,1)
-        selectedCard = MSSBCardDatabase.secretrare_dict[cardNine]
+        selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_5)
+        selectedCardImage_5 = selectedCard.image
+    elif cardRarity >=9801:
+        cardFive = _sysrand.randint (1,1)
+        selectedCard = MSSBCardDatabase.secretrare_dict[cardFive]
         def count():
-            return MSSBCardDatabase.secretrare_dict[cardNine]()._count
+            return MSSBCardDatabase.secretrare_dict[cardFive]()._count
         countStr = str(count())
         countStrNum = re.findall(r'\d+',countStr)
-        selectedCardOutput_9 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-        print(selectedCardOutput_9)
-        selectedCardImage_9 = selectedCard.image
+        selectedCardOutput_5 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_5)
+        selectedCardImage_5 = selectedCard.image
     else:
         print ("Error in code")
 
-    return selectedCardOutput_1, selectedCardOutput_2, selectedCardOutput_3, selectedCardOutput_4, selectedCardOutput_5, selectedCardOutput_6, selectedCardOutput_7, selectedCardOutput_8, selectedCardOutput_9, selectedCardImage_1, selectedCardImage_2, selectedCardImage_3, selectedCardImage_4, selectedCardImage_5, selectedCardImage_6, selectedCardImage_7, selectedCardImage_8, selectedCardImage_9
-
+    return selectedCardOutput_1, selectedCardOutput_2, selectedCardOutput_3, selectedCardOutput_4, selectedCardOutput_5, selectedCardImage_1, selectedCardImage_2, selectedCardImage_3, selectedCardImage_4, selectedCardImage_5
 #calculate how many packs have been opened
 def returnPackString():
     global packsOpened
