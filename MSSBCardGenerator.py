@@ -62,130 +62,53 @@ def openPack():
     global selectedCardOutput_4
     global selectedCardImage_4
     if itemCard <= 4000:
-        stadiumCard = _sysrand.randint (1, 10000)
-        if stadiumCard <= 2500:
-            selectedCard = MSSBCardDatabase.stadium_dict[1]
-            def count():
-                return MSSBCardDatabase.stadium_dict[1]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 2501 and stadiumCard <= 5000:
-            selectedCard = MSSBCardDatabase.stadium_dict[2]
-            def count():
-                return MSSBCardDatabase.stadium_dict[2]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 5001 and stadiumCard <= 7500:
-            selectedCard = MSSBCardDatabase.stadium_dict[3]
-            def count():
-                return MSSBCardDatabase.stadium_dict[3]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 7501 and stadiumCard <= 7650:
-            selectedCard = MSSBCardDatabase.stadium_dict[4]
-            def count():
-                return MSSBCardDatabase.stadium_dict[4]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 7501 and stadiumCard <= 7650:
-            selectedCard = MSSBCardDatabase.stadium_dict[4]
-            def count():
-                return MSSBCardDatabase.stadium_dict[4]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 7651 and stadiumCard <= 8500:
-            selectedCard = MSSBCardDatabase.stadium_dict[5]
-            def count():
-                return MSSBCardDatabase.stadium_dict[5]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif stadiumCard >= 8501 and stadiumCard <= 9000:
-            selectedCard = MSSBCardDatabase.stadium_dict[6]
-            def count():
-                return MSSBCardDatabase.stadium_dict[6]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4) 
-            selectedCardImage_4 = selectedCard.image 
-        elif stadiumCard >= 9001:
-            selectedCard = MSSBCardDatabase.stadium_dict[7]
-            def count():
-                return MSSBCardDatabase.stadium_dict[7]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image   
+        stadiumCardWeight = _sysrand.randint (1, 10000)
+        if stadiumCardWeight <= 2500:
+            cardFour = 1
+        elif stadiumCardWeight >= 2501 and stadiumCardWeight <= 5000:
+            cardFour = 2
+        elif stadiumCardWeight >= 5001 and stadiumCardWeight <= 7500:
+            cardFour = 3
+        elif stadiumCardWeight >= 7501 and stadiumCardWeight <= 8550:
+            cardFour = 4
+        elif stadiumCardWeight >= 8551 and stadiumCardWeight <= 9400:
+            cardFour = 5
+        elif stadiumCardWeight >= 9401 and stadiumCardWeight <= 9900:
+            cardFour = 6
+        elif stadiumCardWeight >= 9901:
+            cardFour = 7
         else:
-            print ("Error in code") 
+            print("Error in code")
+        selectedCard = MSSBCardDatabase.stadium_dict[cardFour]
+        def count():
+            return MSSBCardDatabase.stadium_dict[selectedCard]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image
     elif itemCard >= 4001 and itemCard <= 4500:
-        starCard = _sysrand.randint (1, 10000)
-        if starCard <= 4000:
-            selectedCard = MSSBCardDatabase.starchance_dict[1]
-            def count():
-                return MSSBCardDatabase.starchance_dict[1]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image 
-        elif starCard <= 4001 and starCard >= 7000:
-            selectedCard = MSSBCardDatabase.starchance_dict[2]
-            def count():
-                return MSSBCardDatabase.starchance_dict[2]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image
-        elif starCard <= 7001 and starCard >= 8500:
-            selectedCard = MSSBCardDatabase.starchance_dict[3]
-            def count():
-                return MSSBCardDatabase.starchance_dict[3]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4) 
-            selectedCardImage_4 = selectedCard.image
-        elif starCard <= 8501 and starCard >= 9500:
-            selectedCard = MSSBCardDatabase.starchance_dict[4]
-            def count():
-                return MSSBCardDatabase.starchance_dict[4]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image 
-        elif starCard <= 9501:
-            selectedCard = MSSBCardDatabase.starchance_dict[5]
-            def count():
-                return MSSBCardDatabase.starchance_dict[5]()._count
-            countStr = str(count())
-            countStrNum = re.findall(r'\d+', countStr)
-            selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
-            print(selectedCardOutput_4)
-            selectedCardImage_4 = selectedCard.image 
+        starCardWeight = _sysrand.randint (1, 10000)
+        if starCardWeight <= 4000:
+            cardFour = 1
+        elif starCardWeight >= 4001 and starCardWeight <= 7000:
+            cardFour = 2
+        elif starCardWeight >= 7001 and starCardWeight <= 8500:
+            cardFour = 3
+        elif starCardWeight >= 8501 and starCardWeight <= 9500:
+            cardFour = 4
+        elif starCardWeight >= 9501:
+            cardFour = 5
         else:
-            print ("Error in code")
+            print("Error in code")
+        selectedCard = MSSBCardDatabase.starchance_dict[cardFour]
+        def count():
+            return MSSBCardDatabase.starchance_dict[selectedCard]()._count
+        countStr = str(count())
+        countStrNum = re.findall(r'\d+', countStr)
+        selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
+        print(selectedCardOutput_4)
+        selectedCardImage_4 = selectedCard.image        
     elif itemCard >= 4501 and itemCard <= 4600:
         selectedCard = MSSBCardDatabase.consumables_dict[1]
         def count():
@@ -204,7 +127,7 @@ def openPack():
         selectedCardOutput_4 = selectedCard.charname + " -- " + selectedCard.rarity + " -- " + "".join(countStrNum)
         print(selectedCardOutput_4)
         selectedCardImage_4 = selectedCard.image
-    elif itemCard >= 4800 and itemCard <= 4800:
+    elif itemCard >= 4701 and itemCard <= 4800:
         selectedCard = MSSBCardDatabase.consumables_dict[3]
         def count():
             return MSSBCardDatabase.consumables_dict[3]()._count
