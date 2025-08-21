@@ -39,14 +39,15 @@ if st.session_state.stage == 1:
     html_img4 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_4} alt="Error"> </div>'
     selectedCardImage_5 = MSSB.selectedCardImage_5
     html_img5 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_5} alt="Error"> </div>'
-    selectedCardImage_6 = MSSB.selectedCardImage_6
-    html_img6 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_6} alt="Error"> </div>'
-    selectedCardImage_7 = MSSB.selectedCardImage_7
-    html_img7 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_7} alt="Error"> </div>'
-    selectedCardImage_8 = MSSB.selectedCardImage_8
-    html_img8 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_8} alt="Error"> </div>'
-    selectedCardImage_9 = MSSB.selectedCardImage_9
-    html_img9 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_9} alt="Error"> </div>'
+    #commented out to account for 5 card output
+    #selectedCardImage_6 = MSSB.selectedCardImage_6
+    #html_img6 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_6} alt="Error"> </div>'
+    #selectedCardImage_7 = MSSB.selectedCardImage_7
+    #html_img7 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_7} alt="Error"> </div>'
+    #selectedCardImage_8 = MSSB.selectedCardImage_8
+    #html_img8 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_8} alt="Error"> </div>'
+    #selectedCardImage_9 = MSSB.selectedCardImage_9
+    #html_img9 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_9} alt="Error"> </div>'
  
     #store the text output for each card
     selectedCardOutput_1 = MSSB.selectedCardOutput_1
@@ -59,14 +60,15 @@ if st.session_state.stage == 1:
     html_str4 = f'<p align="center">{selectedCardOutput_4} </p>'
     selectedCardOutput_5 = MSSB.selectedCardOutput_5
     html_str5 = f'<p align="center">{selectedCardOutput_5} </p>'
-    selectedCardOutput_6 = MSSB.selectedCardOutput_6
-    html_str6 = f'<p align="center">{selectedCardOutput_6} </p>'
-    selectedCardOutput_7 = MSSB.selectedCardOutput_7
-    html_str7 = f'<p align="center">{selectedCardOutput_7} </p>'
-    selectedCardOutput_8 = MSSB.selectedCardOutput_8
-    html_str8 = f'<p align="center">{selectedCardOutput_8} </p>'
-    selectedCardOutput_9 = MSSB.selectedCardOutput_9
-    html_str9 = f'<p align="center">{selectedCardOutput_9} </p>'
+    #commented out to account for 5 card output
+    #selectedCardOutput_6 = MSSB.selectedCardOutput_6
+    #html_str6 = f'<p align="center">{selectedCardOutput_6} </p>'
+    #selectedCardOutput_7 = MSSB.selectedCardOutput_7
+    #html_str7 = f'<p align="center">{selectedCardOutput_7} </p>'
+    #selectedCardOutput_8 = MSSB.selectedCardOutput_8
+    #html_str8 = f'<p align="center">{selectedCardOutput_8} </p>'
+    #selectedCardOutput_9 = MSSB.selectedCardOutput_9
+    #html_str9 = f'<p align="center">{selectedCardOutput_9} </p>'
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -74,22 +76,22 @@ if st.session_state.stage == 1:
         st.markdown(html_str1, unsafe_allow_html=True)
         st.markdown(html_img4, unsafe_allow_html=True)
         st.markdown(html_str4, unsafe_allow_html=True)
-        st.markdown(html_img7, unsafe_allow_html=True)
-        st.markdown(html_str7, unsafe_allow_html=True)
+        #st.markdown(html_img7, unsafe_allow_html=True)
+        #st.markdown(html_str7, unsafe_allow_html=True)
     with col2:
         st.markdown(html_img2, unsafe_allow_html=True)
         st.markdown(html_str2, unsafe_allow_html=True)
         st.markdown(html_img5, unsafe_allow_html=True)
         st.markdown(html_str5, unsafe_allow_html=True)
-        st.markdown(html_img8, unsafe_allow_html=True)
-        st.markdown(html_str8, unsafe_allow_html=True)
+        #st.markdown(html_img8, unsafe_allow_html=True)
+        #st.markdown(html_str8, unsafe_allow_html=True)
     with col3:
         st.markdown(html_img3, unsafe_allow_html=True)
         st.markdown(html_str3, unsafe_allow_html=True)
-        st.markdown(html_img6, unsafe_allow_html=True)
-        st.markdown(html_str6, unsafe_allow_html=True)
-        st.markdown(html_img9, unsafe_allow_html=True)
-        st.markdown(html_str9, unsafe_allow_html=True)
+        #st.markdown(html_img6, unsafe_allow_html=True)
+        #st.markdown(html_str6, unsafe_allow_html=True)
+        #st.markdown(html_img9, unsafe_allow_html=True)
+        #st.markdown(html_str9, unsafe_allow_html=True)
     
     with st.sidebar:
             packsOpenedStr = MSSB.packsOpenedStr
@@ -133,14 +135,15 @@ if st.session_state.stage == 3:
     html_img4 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_4} alt="Error"> </div>'
     selectedCardImage_5 = MSSB.selectedCardImage_5
     html_img5 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_5} alt="Error"> </div>'
-    selectedCardImage_6 = MSSB.selectedCardImage_6
-    html_img6 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_6} alt="Error"> </div>'
-    selectedCardImage_7 = MSSB.selectedCardImage_7
-    html_img7 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_7} alt="Error"> </div>'
-    selectedCardImage_8 = MSSB.selectedCardImage_8
-    html_img8 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_8} alt="Error"> </div>'
-    selectedCardImage_9 = MSSB.selectedCardImage_9
-    html_img9 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_9} alt="Error"> </div>'
+    #commented out to account for 5 card output
+    #selectedCardImage_6 = MSSB.selectedCardImage_6
+    #html_img6 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_6} alt="Error"> </div>'
+    #selectedCardImage_7 = MSSB.selectedCardImage_7
+    #html_img7 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_7} alt="Error"> </div>'
+    #selectedCardImage_8 = MSSB.selectedCardImage_8
+    #html_img8 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_8} alt="Error"> </div>'
+    #selectedCardImage_9 = MSSB.selectedCardImage_9
+    #html_img9 = f'<div style="text-align: center;"> <img align="center" src={selectedCardImage_9} alt="Error"> </div>'
  
     #store the text output for each card
     selectedCardOutput_1 = MSSB.selectedCardOutput_1
@@ -153,14 +156,15 @@ if st.session_state.stage == 3:
     html_str4 = f'<p align="center">{selectedCardOutput_4} </p>'
     selectedCardOutput_5 = MSSB.selectedCardOutput_5
     html_str5 = f'<p align="center">{selectedCardOutput_5} </p>'
-    selectedCardOutput_6 = MSSB.selectedCardOutput_6
-    html_str6 = f'<p align="center">{selectedCardOutput_6} </p>'
-    selectedCardOutput_7 = MSSB.selectedCardOutput_7
-    html_str7 = f'<p align="center">{selectedCardOutput_7} </p>'
-    selectedCardOutput_8 = MSSB.selectedCardOutput_8
-    html_str8 = f'<p align="center">{selectedCardOutput_8} </p>'
-    selectedCardOutput_9 = MSSB.selectedCardOutput_9
-    html_str9 = f'<p align="center">{selectedCardOutput_9} </p>'
+    #commented out to account for 5 card output
+    #selectedCardOutput_6 = MSSB.selectedCardOutput_6
+    #html_str6 = f'<p align="center">{selectedCardOutput_6} </p>'
+    #selectedCardOutput_7 = MSSB.selectedCardOutput_7
+    #html_str7 = f'<p align="center">{selectedCardOutput_7} </p>'
+    #selectedCardOutput_8 = MSSB.selectedCardOutput_8
+    #html_str8 = f'<p align="center">{selectedCardOutput_8} </p>'
+    #selectedCardOutput_9 = MSSB.selectedCardOutput_9
+    #html_str9 = f'<p align="center">{selectedCardOutput_9} </p>'
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -168,22 +172,22 @@ if st.session_state.stage == 3:
         st.markdown(html_str1, unsafe_allow_html=True)
         st.markdown(html_img4, unsafe_allow_html=True)
         st.markdown(html_str4, unsafe_allow_html=True)
-        st.markdown(html_img7, unsafe_allow_html=True)
-        st.markdown(html_str7, unsafe_allow_html=True)
+        #st.markdown(html_img7, unsafe_allow_html=True)
+        #st.markdown(html_str7, unsafe_allow_html=True)
     with col2:
         st.markdown(html_img2, unsafe_allow_html=True)
         st.markdown(html_str2, unsafe_allow_html=True)
         st.markdown(html_img5, unsafe_allow_html=True)
         st.markdown(html_str5, unsafe_allow_html=True)
-        st.markdown(html_img8, unsafe_allow_html=True)
-        st.markdown(html_str8, unsafe_allow_html=True)
+        #st.markdown(html_img8, unsafe_allow_html=True)
+        #st.markdown(html_str8, unsafe_allow_html=True)
     with col3:
         st.markdown(html_img3, unsafe_allow_html=True)
         st.markdown(html_str3, unsafe_allow_html=True)
-        st.markdown(html_img6, unsafe_allow_html=True)
-        st.markdown(html_str6, unsafe_allow_html=True)
-        st.markdown(html_img9, unsafe_allow_html=True)
-        st.markdown(html_str9, unsafe_allow_html=True)
+        #st.markdown(html_img6, unsafe_allow_html=True)
+        #st.markdown(html_str6, unsafe_allow_html=True)
+        #st.markdown(html_img9, unsafe_allow_html=True)
+        #st.markdown(html_str9, unsafe_allow_html=True)
     
     with st.sidebar:
             packsOpenedStr = MSSB.packsOpenedStr

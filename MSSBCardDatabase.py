@@ -3,7 +3,8 @@ from itertools import count
 #import path to format image locations
 from pathlib import Path
 
-#Each class contains static information about each card, need to design in class feature to count the amoutn of times the class has been called in the code
+#Each class contains static information about each card, need to design in class feature to count the amount of times the class has been called in the code
+#Character Classes
 class BluePianta:
     charname = 'Blue Pianta'
     rarity = 'Common'
@@ -63,7 +64,7 @@ class BlackShyGuy:
 
 class Toad:
     charname = 'Toad'
-    rarity = 'Rare'
+    rarity = 'Common'
     captain = False
     stadium = False
     starToken = False
@@ -107,7 +108,7 @@ class RedDryBones:
 
 class Peach:
     charname = 'Peach'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -118,7 +119,7 @@ class Peach:
 
 class BowserJr:
     charname = 'Bowser Jr.'
-    rarity = 'Common'
+    rarity = 'Rare'
     cpatain = False
     stadium = False
     starToken = False
@@ -129,7 +130,7 @@ class BowserJr:
 
 class BabyMario:
     charname = 'Baby Mario'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -140,7 +141,7 @@ class BabyMario:
         
 class BabyLuigi:
     charname = 'Baby Luigi'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = False
     stadium = False
     starToken = False
@@ -172,7 +173,7 @@ class Paragoomba:
         self._count = next(self._count)
 
 class Paratroopa:
-    charname = 'Paratroopa'
+    charname = 'Koopa Paratroopa'
     rarity = 'Common'
     captain = False
     stadium = False
@@ -292,53 +293,9 @@ class BlueDryBones:
     def __init__(self):
         self._count = next(self._count)
 
-class MarioStadium:
-    charname = 'Mario Stadium'
-    rarity = 'Common'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
-class YoshiPark:
-    charname = 'Yoshi Park'
-    rarity = 'Common'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
-class PeachGarden:
-    charname = 'Peach Garden'
-    rarity = 'Rare'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
-class WarioPalace:
-    charname = 'Wario Palace'
-    rarity = 'Common'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
 class RedMagikoopa:
     charname = 'Red Magikoopa'
-    rarity = 'Super Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -349,7 +306,7 @@ class RedMagikoopa:
 
 class GreenMagikoopa:
     charname = 'Green Magikoopa'
-    rarity = 'Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -360,7 +317,7 @@ class GreenMagikoopa:
     
 class YellowMagikoopa:
     charname = 'Yellow Magikoopa'
-    rarity = 'Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -371,7 +328,7 @@ class YellowMagikoopa:
 
 class Mario:
     charname = 'Mario'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -382,7 +339,7 @@ class Mario:
 
 class Luigi:
     charname = 'Luigi'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -403,7 +360,7 @@ class YellowPianta:
         self._count = next(self._count)
     
 class GreenParatroopa:
-    charname = 'Green Paratroopa'
+    charname = 'Green Koopa Paratroopa'
     rarity = 'Rare'
     captain = False
     stadium = False
@@ -448,7 +405,7 @@ class FireBro:
 
 class Wario:
     charname = 'Wario'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -459,7 +416,7 @@ class Wario:
 
 class Daisy:
     charname = 'Daisy'
-    rarity = 'Common'
+    rarity = 'Rare'
     captain = True
     stadium = False
     starToken = False
@@ -490,28 +447,6 @@ class RedKoopaTroopa:
     def __init__(self):
         self._count = next(self._count)
     
-class DKJungle:
-    charname = 'Donkey Kong Jungle'
-    rarity = 'Rare'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
-class BowserCastle:
-    charname = 'Bowser Castle'
-    rarity = 'Common'
-    captain = False
-    stadium = True
-    starToken = False
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
 class HammerBro:
     charname = 'Hammer Bro'
     rarity = 'Ultra Rare'
@@ -525,7 +460,7 @@ class HammerBro:
 
 class BoomerangBro:
     charname = 'Boomerang Bro'
-    rarity = 'Super Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -536,7 +471,7 @@ class BoomerangBro:
 
 class DiddyKong:
     charname = 'Diddy Kong'
-    rarity = 'Rare'
+    rarity = 'Super Rare'
     captain = True
     stadium = False
     starToken = False
@@ -580,7 +515,7 @@ class KingBoo:
 
 class Magikoopa:
     charname = 'Magikoopa'
-    rarity = 'Super Rare'
+    rarity = 'Ultra Rare'
     captain = False
     stadium = False
     starToken = False
@@ -599,18 +534,7 @@ class RedPianta:
     _count = count(1)
     def __init__(self):
         self._count = next(self._count)
-
-class StarTokenCR:
-    charname = 'Star Token (C/R)'
-    rarity = 'Super Rare'
-    captain = False
-    stadium = False
-    starToken = True
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
+        
 class Yoshi:
     charname = 'Yoshi'
     rarity = 'Ultra Rare'
@@ -665,18 +589,7 @@ class Birdo:
     _count = count(1)
     def __init__(self):
         self._count = next(self._count)
-
-class StarTokenSUSE:
-    charname = 'Star Token (S/U/Se)'
-    rarity = 'Ultra Rare'
-    captain = False
-    stadium = False
-    starToken = True
-    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
-    _count = count(1)
-    def __init__(self):
-        self._count = next(self._count)
-
+        
 class Bowser:
     charname = 'Bowser'
     rarity = 'Secret Rare'
@@ -688,9 +601,216 @@ class Bowser:
     def __init__(self):
         self._count = next(self._count)
 
-#dictonaries that store cards by rarity
-common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Daisy, 11:BowserJr, 12:BabyMario, 13:BabyLuigi, 14:Goomba, 15:Paragoomba, 16:Paratroopa, 17:GreenShyGuy, 18:MontyMole, 19:BlueToad, 20:YellowToad, 21:GreenToad, 22:KoopaTroopa, 23:BlueShyGuy, 24:YellowShyGuy, 25:DryBones, 26:BlueDryBones, 27:MarioStadium, 28:YoshiPark, 29:BowserCastle, 30:WarioPalace}
-rare_dict = {1:DiddyKong, 2:GreenMagikoopa, 3:YellowMagikoopa, 4:Mario, 5:Luigi, 6:Toad, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta, 11:Wario, 12:Peach, 13:Toadette, 14:GreenDryBones, 15:DKJungle, 16:PeachGarden}
-superrare_dict = {1:Birdo, 2:BoomerangBro, 3:RedMagikoopa, 4:DixieKong, 5:Waluigi, 6:KingBoo, 7:Magikoopa, 8:Boo, 9:StarTokenCR}
-ultrarare_dict = {1:Yoshi, 2:FireBro, 3:PeteyPiranha, 4:DonkeyKong, 5:HammerBro, 6:StarTokenSUSE}
-secretrare_dict = {1:Bowser}
+#Character Wild Card Classes
+class WildSR:
+    charname = 'Wild Super Rare'
+    rarity = 'Ultra Rare'
+    captain = False
+    stadium = False
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class WildUR:
+    charname = 'Wild Ultra Rare'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+#Stadium Classes        
+class BowserCastle:
+    charname = 'Bowser Castle'
+    rarity = 'Common'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class WarioPalace:
+    charname = 'Wario Palace'
+    rarity = 'Common'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class YoshiPark:
+    charname = 'Yoshi Park'
+    rarity = 'Common'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class MarioStadium:
+    charname = 'Mario Stadium'
+    rarity = 'Rare'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class DKJungle:
+    charname = 'Donkey Kong Jungle'
+    rarity = 'Super Rare'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class PeachGarden:
+    charname = 'Peach Garden'
+    rarity = 'Ultra Rare'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+        
+class ToyField:
+    charname = 'Toy Field'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = True
+    starToken = False
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+#Star Token Classes
+class CommonStar:
+    charname = 'Common Superstar'
+    rarity = 'Common'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class RareStar:
+    charname = 'Rare Superstar'
+    rarity = 'Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class SuperStar:
+    charname = 'Super Rare Superstar'
+    rarity = 'Super Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class UltraStar:
+    charname = 'Ultra Rare Superstar'
+    rarity = 'Ultra Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class SecretStar:
+    charname = 'Secret Rare Superstar'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+#Consumable Classes
+class ExtraPack:
+    charname = 'Extra Pack'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class Reroll:
+    charname = 'Reroll'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+class Trade:
+    charname = 'Trade'
+    rarity = 'Secret Rare'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+#Placeholder Consumable
+class MissedChance:
+    charname = 'Missed Star Chance'
+    rarity = 'Common'
+    captain = False
+    stadium = False
+    starToken = True
+    image = "https://drive.google.com/uc?export=view&id=1FN5MzEWIWmTbiMh_5Lt6A614UnIDBP2i"
+    _count = count(1)
+    def __init__(self):
+        self._count = next(self._count)
+
+#dictonaries that store cards by rarity and store variants for special circumstances
+common_dict = {1:BluePianta, 2:BlueNoki, 3:RedNoki, 4:ShyGuy, 5:BlackShyGuy, 6:YellowPianta, 7:PurpleToad, 8:RedKoopaTroopa, 9:RedDryBones, 10:Goomba, 11:Paragoomba, 12:Paratroopa, 13:GreenShyGuy, 14:MontyMole, 15:BlueToad, 16:YellowToad, 17:GreenToad, 18:KoopaTroopa, 19:BlueShyGuy, 20:YellowShyGuy, 21:DryBones, 22:BlueDryBones, 23:Toad}
+rare_dict = {1:Toadette, 2:GreenDryBones, 3:Daisy, 4:BowserJr, 5:BabyMario, 6:BabyLuigi, 7:GreenParatroopa, 8:GreenNoki, 9:Toadsworth, 10:RedPianta}
+superrare_dict = {1:Peach, 2:DiddyKong, 3:Boo, 4:DixieKong, 5:Luigi, 6:Wario, 7:Waluigi, 8:KingBoo, 9:Mario, 10:Birdo}
+ultrarare_dict = {1:WildSR, 2:Yoshi, 3:DonkeyKong, 4:PeteyPiranha, 5:HammerBro, 6:BoomerangBro, 7:FireBro, 8:Magikoopa, 9:RedMagikoopa, 10:GreenMagikoopa, 11:YellowMagikoopa}
+secretrare_dict = {1:WildUR, 2:Bowser}
+stadium_dict = {1:YoshiPark, 2:BowserCastle, 3:WarioPalace, 4:MarioStadium, 5:DKJungle, 6:PeachGarden, 7:ToyField}
+starchance_dict = {1:CommonStar, 2:RareStar, 3:SuperStar, 4:UltraStar, 5:SecretStar}
+consumables_dict = {1: ExtraPack, 2:Reroll, 3:Trade}
+misc_dict = {1: MissedChance}
